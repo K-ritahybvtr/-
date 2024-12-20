@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги и Покупки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .service {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+            margin: 10px 0;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .service h3 {
+            margin: 0 0 10px;
+        }
+        .service p {
+            margin: 0 0 15px;
+        }
+        .service button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .service button:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Наши Услуги</h1>
+    </header>
+    <div class="container">
+        <div class="service">
+            <h3>Услуга 1</h3>
+            <p>Описание услуги 1. Отличный выбор для тех, кто ищет качество.</p>
+            <button onclick="purchase('Услуга 1')">Купить</button>
+        </div>
+        <div class="service">
+            <h3>Услуга 2</h3>
+            <p>Описание услуги 2. Рекомендуем для профессионалов.</p>
+            <button onclick="purchase('Услуга 2')">Купить</button>
+        </div>
+        <div class="service">
+            <h3>Услуга 3</h3>
+            <p>Описание услуги 3. Идеально для начинающих.</p>
+            <button onclick="purchase('Услуга 3')">Купить</button>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Услуги Онлайн. Все права защищены.
+    </footer>
+
+    <script>
+        function purchase(serviceName) {
+            alert(`Вы выбрали: ${serviceName}`);
+        }
+    </script>
+</body>
+</html>
